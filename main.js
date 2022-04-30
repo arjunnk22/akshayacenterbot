@@ -5,7 +5,7 @@ const { Client, Intents, Collection } = require("discord.js");
 const FiveM = require("fivem") // Import the npm package.
 
 
-const srv = new FiveM.Server('34.93.243.223:30120') // Set the IP with port.
+const srv = new FiveM.Server('') // Set the IP with port.
 
 
 const client = new Client({
@@ -19,7 +19,7 @@ const client = new Client({
 
 client.once('ready', () => {
 
-    
+
     console.log("Bot is Online");
     setInterval(() => {
         srv.getPlayers().then((result) => {
